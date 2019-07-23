@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .wrapper {
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+        .head {
+            background: lightgreen;
+            height: 34px;
+            display: flex;
+            align-items: center;
+        }
+
+    .head select {
+        background: none;
+        border: none;
+    }
+    .head p {
+        margin-right: 20px;
+    }
+    .star:after {
+        content: " *";
+        color: red;
+    }
+
+    .main {
+        display: flex;
+        justify-content: space-between;
+        width: 854px;
+        margin: 0 auto;
+        margin-top: 20px;
+    
+    }
+    .right, .name {
+        width: 45%;
+    }
+
+    .input {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 24px;
+    }
+    .block {
+        display: flex;
+        justify-content: space-between;
+    }
+    .output {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 44px;
+    }
+    .radio {
+        margin-bottom: 10px;
+    }
+    .submit {
+    background: lightgray;
+    justify-content: center;
+    display: flex;
+    height: 38px;
+    }
+    .bottom {
+        display: flex;
+        align-items: center;
+    }
+    
+    </style>
+</head>
+<body>
+    <form>
+<div class="wrapper">
+    <div class="head">
+        <P>Contect Manger</P>
+        <select name="" id="">
+            <option value="">more actions</option>
+            <option value="">test1</option>
+            <option value="">test2</option>
+            <option value="">test3</option>
+        </select>
+
+    </div>
+
+<div class="main">
+
+
+    <div class="name">
+
+            <div class="input">
+                <label class="star" for="firstname">First name</label>
+                <input id="firstname" type="text">   
+            </div>
+
+            <div class="input">
+                <label class="star" for="lastname">Last name</label>
+                <input id="lastname" type="text">       
+            </div>
+
+            <div class="input">
+                <label for="Adress">Adress</label>
+                <input id="adress" style="height: 102px" type="text">            
+            </div>
+
+            <div class="input">
+                <label for="City">City</label>
+                <input id="City" type="text">
+            </div>
+
+            <div class="input">
+                <label for="select">State</label>
+                <select name="" id="select" style="width:173px;">
+                    <option value="">-Select-</option>
+                    <option value="">-Select1-</option>
+                    <option value="">-Select2-</option>
+                </select>
+            </div>
+
+            <div class="input">
+                    <label for="Zip">Zip</label>
+                    <input id="Zip" type="text">
+            </div>
+
+            <div class="input">
+                   <label for="HomePhone">Home Phone</label>
+                   <input id="HomePhone" type="text" style="width:98px; margin-right: 70px;">
+            </div>
+
+            <div class="input">
+                   <label for="WorkPhone">Work Phone</label>
+                   <input id="WorkPhone" type="text">
+            </div>
+
+            <div class="input">
+                    <label for="FaxNumber">Fax Number</label>
+                    <input id="FaxNumber" type="text" style="width: 98px; margin-right: 70px;">
+            </div>
+            
+
+        <div class="block">
+                    <span>Website</span>
+
+        <div class="two">
+            <div class="input">
+                    <label for="URL">URL</label>
+                    <input id="URL" type="text">
+            </div>
+            <div class="input">
+                    <label for="LinkName">Link Name</label>
+                    <input id="LinkName" type="text">
+            </div>
+        </div>
+        </div>
+
+        <div class="input">
+            <label class="star" for="EmeilAdress">Emeil Adress</label>
+            <input id="EmeilAdress" type="text">   
+        </div>
+
+    </div>
+
+
+
+   
+
+    <div class="right">
+
+        <div class="output">
+                <span>When is the best time to contact you</span>
+                    <div class="qwerty" style="text-align: end;">
+                        <div class="radio">
+                            <label for="Morning">Morning</label>
+                            <input id="Morning" name="test" type="radio" value="">
+                        </div>
+                        <div class="radio">
+                            <label for="Afternoon">Afternoon</label>
+                            <input id="Afternoon" name="test" type="radio" value="">
+                        </div>
+                        <div class="radio">
+                            <label for="Evening">Evening</label>
+                            <input id="Evening" name="test" type="radio" value="">
+                        </div>
+                    </div>
+        </div>
+
+        <div class="output">
+                <span>The best way to contact you</span>
+                    <div class="ytrewq" style="text-align: end;">
+                            <div class="radio">
+                                <label for="Phone">Phone</label>
+                                <input id="Phone" name="test" type="radio" value="">
+                            </div>
+                            <div class="radio">
+                                 <label for="Emeil">Emeil</label>
+                                 <input id="Emeil" name="test" type="radio" value="">
+                            </div>
+                            <div class="radio">
+                                  <label for="Fax">Fax</label>
+                                  <input id="Fax" name="test" type="radio" value="">
+                            </div>
+                    </div>
+        </div>
+                <div class="input">
+                    <label for="Massage">Massage</label>
+                    <input id="Massage" type="text" style="height: 100px;">            
+                </div>
+        </div>
+
+
+</div>
+
+<div class="submit">
+    <div class="bottom">
+        <input type="submit" name="submit" value="Enter" style="width:100px; height: 30px; background: lightgreen; margin-right: 5px;" />
+        <br />
+
+        <input type="reset" name="reset" value="Reset" style="width:100px; height: 30px; background: lightgreen;" />
+        <br />
+    </div>
+</div>
+ </form>
+
+
+</body>
+</html>
